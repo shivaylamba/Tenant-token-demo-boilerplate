@@ -1,0 +1,17 @@
+{
+  "name": "tenant_token_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "meilisearch-serve": "docker run -it --rm -p 7700:7700 -v $(pwd)/data.ms:/data.ms getmeili/meilisearch:v0.26.0rc3 ./meilisearch --master-key=2b53060fad07dbcb061cec080a14c52fb1ba848c",
+    "meilisearch-delete": "docker run -it --rm -p 7700:7700 -v $(pwd)/data.ms:/data.ms getmeili/meilisearch:v0.26.0rc3 ./meilisearch --import-dump /dumps/your_dump_file.dump",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "meilisearch": "^0.24.0"
+  }
+}
