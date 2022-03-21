@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
 app.get("/create-tenant-token", async (req, res) => {
   const { value: userName } = req.query;
 
-  /* Replace this comment with the API request */
+  /* Add functionality to create Tenant token */
 });
 
 const port = process.env.PORT || 5000;

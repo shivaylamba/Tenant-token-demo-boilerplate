@@ -9,6 +9,5 @@ export const MEILISEARCH_CONFIG = {
 
 const apiHost = MEILISEARCH_CONFIG.API_HOST
 
-export const getTenantToken = async (userName) => {
-  /* Replace this comment with the API request */
-}
+/* Add the function for Tenant token below */
+export const getTenantToken = async (userName) => {}
