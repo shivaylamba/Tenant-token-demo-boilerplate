@@ -32,7 +32,7 @@ app.listen(port, async () => {
     await client.createKey({
       description: "SEARCH",
       actions: ["search"],
-      indexes: ["tenant_token"],
+      indexes: ["patient_medical_record"],
       expiresAt: "2025-01-01T00:00:00Z",
     });
     console.log("Created API Key");
