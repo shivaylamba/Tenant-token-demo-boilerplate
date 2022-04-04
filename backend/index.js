@@ -16,7 +16,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/create-tenant-token", async (req, res) => {
-  const { value: userName } = req.query;
+  const { value: patientName } = req.query;
 
   /* Add functionality to create Tenant token */
 });
