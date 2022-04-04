@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Card({ data }) {
-  const { isDoctorAppointed, user: userName, roomNumber, description } = data
+  const { isDoctorAppointed, patient: userName, roomNumber, description } = data
 
   return (
     <div
